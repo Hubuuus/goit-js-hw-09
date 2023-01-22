@@ -13,7 +13,7 @@ const dataHours = document.querySelector('[data-hours]');
 const dataMinutes = document.querySelector('[data-minutes]');
 const dataSeconds = document.querySelector('[data-seconds]');
 
-let selectedDates = new Date();
+let selectedDate = new Date();
 let actualTime = new Date();
 
 const options = {
