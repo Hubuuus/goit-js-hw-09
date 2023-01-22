@@ -26,7 +26,6 @@ const options = {
       // window.alert('Please choose a date in the future');
       Notify.warning('Please choose a date in the future');
       startBtn.setAttribute('disabled', '');
-  
     } else {
       Notify.success('The chosen date is correct');
       startBtn.removeAttribute('disabled');
@@ -69,7 +68,7 @@ startBtn.addEventListener('click', () => {
   startBtn.setAttribute('disabled', '');
   const timer = setInterval(() => {
     let timeDifferential = selectedDate.getTime() - actualTime.getTime();
-    
+
     if (timeDifferential > 0) {
       convertMs(timeDifferential);
     } else {
